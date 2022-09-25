@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./assets/artem-labunsky-Sf5rOkzV-qc-unsplash.jpg);
+    color: #553939;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        overflow-y: scroll;
+        border-radius: 35px;
+        width: 60%;
+        padding: 60px;
+        margin: 0 auto;
+        height: 90vh;
+        background-color: #FEFBF6;
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .title{
+            display: flex;
+            h1{
+                flex-basis: 80%;
+                text-align: start;
+            }
+        }
+
+        .wrapper{
+            margin-top: 40px;
+            .addlist{
+                width: 60%;
+                height: 30px;
+                border: none;
+                border-bottom: 1px solid black;
+                font-size: 17px;
+                padding: 10px;
+                margin-right: 10px;
+                outline: none;
+            }
+            input::placeholder{
+                color: grey;
+            }
+            .form{
+                display: flex;
+                margin-bottom: 40px;
+                .add{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    align-items: center;
+                    width: 100px;
+                    margin-left: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+                    background-color: #FFE9A0;
+                    font-weight: 700;
+                    text-transform: lowercase;
+                }
+            }
+        }
+        .content{
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            &__item{
+                display: flex;
+                justify-content: space-between;
+                gap: 50px;
+                margin-top: 5px;
+            }
+            .delete{
+                cursor: pointer;
+                font-size: 25px;
+                padding-right: 50px;
+            }
+        }
+
+
+
+
+    }
+}
